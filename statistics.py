@@ -1,4 +1,5 @@
-"""Compute average and variance of data."""
+"""Compute statistics of data."""
+
 from math import sqrt
 
 
