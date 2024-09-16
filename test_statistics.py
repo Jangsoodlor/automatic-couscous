@@ -1,5 +1,5 @@
 from unittest import TestCase
-from statistics import variance, stdev
+from statistics import variance, stdev, average
 from math import sqrt
 
 class StatisticsTest(TestCase):
@@ -24,9 +24,12 @@ class StatisticsTest(TestCase):
         self.assertEqual(2.0, stdev([1, 5]))
         # variance([0, 0.5, 1, 1.5, 2.0]) is 0.5
         self.assertEqual(sqrt(0.5), stdev([0, 0.5, 1, 1.5, 2]))
-
-
-if __name__ == '__main__':
-    import unittest
-    unittest.main(verbosity=1)
-
+        with self.assertRaises(ValueError):
+            stdev([])
+    
+    def test_avg(self):
+        self.assertEqual(0.0, average([0,0,0]))
+        self.assertEqual(3.0, average([1,2,3,4,5]))
+        self.assertEqual(75, average([50, 100]))
+        with self.assertRaises(ValueError):
+            average([])
