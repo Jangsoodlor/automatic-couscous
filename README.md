@@ -1,7 +1,9 @@
 Continuous Integration Demo
 ===========================
 [![Run unit tests](https://github.com/Jangsoodlor/ci-demo/actions/workflows/python-unittest.yml/badge.svg)](https://github.com/Jangsoodlor/ci-demo/actions/workflows/python-unittest.yml)
-[![Run Flake8 and Flake8 Docstrings](https://github.com/Jangsoodlor/ci-demo/actions/workflows/style-checking.yml/badge.svg)](https://github.com/Jangsoodlor/ci-demo/actions/workflows/style-checking.yml)<br>
+[![Run Flake8 and Flake8 Docstrings](https://github.com/Jangsoodlor/ci-demo/actions/workflows/style-checking.yml/badge.svg)](https://github.com/Jangsoodlor/ci-demo/actions/workflows/style-checking.yml)
+[![Run coverage tests](https://github.com/Jangsoodlor/ci-demo/actions/workflows/codecov-test.yml/badge.svg)](https://github.com/Jangsoodlor/ci-demo/actions/workflows/codecov-test.yml)
+<br>
 This project demonstrates use of Github Actions to build and test a Python project.  
 
 ## Automatic Testing
